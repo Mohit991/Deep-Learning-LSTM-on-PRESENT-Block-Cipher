@@ -68,7 +68,7 @@ model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy']
 print('Model compiled.')
 
 print(model.summary())
-
+ 
 model.fit(X_train,Y_train,epochs=20)
 
 val_loss,val_acc=model.evaluate(X_test,Y_test)
